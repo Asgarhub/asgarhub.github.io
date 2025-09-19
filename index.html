@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Asgarhub</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="shortcut icon" href="/icons/asgarhub.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Theme switch button -->
+    <div id="theme-switch-wrapper">
+      <div id="theme-switch" class="switch" dir="ltr">
+        <div class="switch-handle">
+          <img id="theme-icon" src="icons/moon.svg" alt="Theme" width="20px" />
+        </div>
+      </div>
+    </div>
 
+    <div class="wrap">
+      <div class="card">
+        <div class="text-title">
+          <img src="icons/asgarhub.png" alt="Logo" class="centered-img" />
+          <p class="lead">روی هر دکمه کلیک کن تا به اپ یا لینک مربوطه بری.</p>
+        </div>
+
+        <hr />
+
+        <div id="app"></div>
+
+        <footer>
+          قابل استفاده در موبایل: دکمه‌ها اپ‌ها را باز می‌کنند، در دسکتاپ در صورت نیاز وب‌ورژن هدایت
+          می‌شود.
+        </footer>
+      </div>
+    </div>
+
+    <script>
+      const btn = document.getElementById('theme-switch');
+      const icon = document.getElementById('theme-icon');
+
+      icon.src = 'icons/moon.svg';
+      let darkMode = true;
+
+      btn.addEventListener('click', () => {
+        darkMode = !darkMode;
+        document.body.classList.toggle('light-mode', !darkMode);
+
+        // switch icon src
+        icon.src = darkMode ? 'icons/moon.svg' : 'icons/sun.svg';
+      });
+    </script>
+
+    <script src="/main.js"></script>
+  </body>
+</html>

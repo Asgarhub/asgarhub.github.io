@@ -1,0 +1,42 @@
+{
+  "sections": [
+    {
+      "title": "ربات‌ها",
+      "buttons": [
+        {
+          "id": "btn-wa",
+          "type": "whatsapp",
+          "label": "شعبه واتساپ",
+          "icon": "icons/WhatsApp_Logo_green.svg.png",
+          "link": "https://wa.me/989123456789"
+        },
+        {
+          "id": "btn-tg",
+          "type": "telegram",
+          "label": "شعبه تلگرام",
+          "icon": "icons/Telegram_2019_Logo.svg.webp",
+          "link": "https://t.me/username"
+        }
+      ]
+    },
+    {
+      "title": "اطلاع‌رسانی و گروه‌ها",
+      "buttons": [
+        {
+          "id": "btn-tg-gp",
+          "type": "telegram",
+          "label": "گروه چت تلگرام",
+          "icon": "icons/Telegram_2019_Logo.svg.webp",
+          "link": "https://t.me/group"
+        },
+        {
+          "id": "btn-tg-channel",
+          "type": "telegram",
+          "label": "کانال اطلاع‌رسانی تلگرام",
+          "icon": "icons/Telegram_2019_Logo.svg.webp",
+          "link": "https://t.me/channel"
+        }
+      ]
+    }
+  ]
+}
