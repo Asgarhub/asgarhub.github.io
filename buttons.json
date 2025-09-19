@@ -15,7 +15,7 @@
           "type": "telegram",
           "label": "شعبه تلگرام",
           "icon": "icons/Telegram_2019_Logo.svg.webp",
-          "link": "https://t.me/username"
+          "link": "https://t.me/xAsgar_bot"
         }
       ]
     },
@@ -27,14 +27,14 @@
           "type": "telegram",
           "label": "گروه چت تلگرام",
           "icon": "icons/Telegram_2019_Logo.svg.webp",
-          "link": "https://t.me/group"
+          "link": "https://t.me/asgarhub_gp"
         },
         {
           "id": "btn-tg-channel",
           "type": "telegram",
           "label": "کانال اطلاع‌رسانی تلگرام",
           "icon": "icons/Telegram_2019_Logo.svg.webp",
-          "link": "https://t.me/channel"
+          "link": "https://t.me/asgarhub"
         }
       ]
     }
