@@ -39,14 +39,19 @@
       const btn = document.getElementById('theme-switch');
       const icon = document.getElementById('theme-icon');
 
-      icon.src = 'icons/moon.svg';
-      let darkMode = true;
+      // Detect user's system preference
+      let darkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
+      // Apply initial mode
+      document.body.classList.toggle('light-mode', !darkMode);
+      icon.src = darkMode ? 'icons/moon.svg' : 'icons/sun.svg';
+
+      // Toggle mode on button click
       btn.addEventListener('click', () => {
         darkMode = !darkMode;
         document.body.classList.toggle('light-mode', !darkMode);
 
-        // switch icon src
+        // Switch icon
         icon.src = darkMode ? 'icons/moon.svg' : 'icons/sun.svg';
       });
     </script>
